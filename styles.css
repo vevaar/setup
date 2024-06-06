@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#section-one {
+    width: 98vw;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.card-wrapper {
+    position: absolute;
+    max-width: 300px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#section-two {
+    width: 100vw;
+    height: 98vh;
+    display: flex;
+    position: relative;
+}
+
+.left, .right {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    opacity: 0; /* Initially hidden */
+}
+
+.left {
+    top: -100%; /* Start off the screen from the top */
+}
+
+.right {
+    margin-left: 350px;
+    bottom: -100%; /* Start off the screen from the bottom */
+}
